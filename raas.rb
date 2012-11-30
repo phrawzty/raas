@@ -1,12 +1,12 @@
 # This will dump some debug output to console and enable classy Sinatra errors.
 @debug = true
 
-require 'securerandom' 
+require 'securerandom'
 require 'sinatra'
 require 'yaml'
 require 'json'
 require 'xmlsimple'
-if ( @debug == true ) then
+if (@debug == true) then
     require 'pp'
 end
 
@@ -68,9 +68,9 @@ end
 
 # Routes go here.
 def routes
-	get '/' do
-		erb :index
-	end
+    get '/' do
+        erb :index
+    end
 
     # The basic GET API, heh.
     get '/:enc/:charset/:len/:num' do
