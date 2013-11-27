@@ -52,7 +52,14 @@ def encoder(enc = false, result = nil)
     raise 'result must be an array' unless result.is_a?(Array)
 
     type = nil
+    sub = nil
+
     type = case enc
+        when 'j' then 'application'
+        else 'text'
+    end
+
+    sub = case enc
         when 'p' then 'plain'
         when 'y' then 'yaml'
         when 'j' then 'json'
@@ -61,9 +68,9 @@ def encoder(enc = false, result = nil)
         else raise 'encoding is something strange and terrifying'
     end
 
-    puts "DEBUG: encoder: type => #{type}" unless @debug == false
+    puts "DEBUG: Content-Type: #{type}/#{sub}" unless @debug == false
 
-    erb "result_#{type}".to_sym, :content_type => "text/#{type}", :locals => { :result => result }
+    erb "result_#{sub}".to_sym, :content_type => "#{type}/#{sub}", :locals => { :result => result }
 end
 
 # Routes go here.
