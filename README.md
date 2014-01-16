@@ -26,10 +26,19 @@ Usage
 
 So the API can deal with this : `/:enc/:charset/:len/:num`
 
- * Valid `:enc` are `p`, `j`, `y`, `h`, and `x`.
- * Valid `:charset` are `ab`, `as`, `hex`, and `num`.
- * `:len` is length of each result.
- * `:num` is the number of results.
+ * Valid `:enc` are:
+   * `p` for plain text
+   * `j` for JSON
+   * `y` for YAML
+   * `h` for HTML
+   * `x` for XML
+ * Valid `:charset` are:
+   * `ab` for basic alpha-numeric characters
+   * `as` for "safe" alpha-numeric characters (no characters that are too similar visually)
+   * `hex` for hexadecimal characters
+   * `num` for numbers only
+ * `:len` is length of each result
+ * `:num` is the number of results
 
 Run it like this : `$ ruby ./raas.rb`
 
