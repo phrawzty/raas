@@ -1,28 +1,23 @@
-RaaS
-====
+# RaaS
 
 This is a simple Sinatra application for generating and providing strings full
 of random characters via HTTP.
 
-What?
------
+## What?
 
 Yeah, we know.  Deal with it.
 
-Disclaimer
-----------
+## Disclaimer
 
 This is a *proof of concept* and no guarantee is made to the fitness (or,
 indeed, usefulness) of this application whatsoever.  Please enjoy responsibly.
 
-Requirements
-------------
+## Requirements
 
  * Ruby v1.9.3 or better; anything less would be uncivilised.
  * The `sinatra` and `xml-simple` gems, along with other standard modules.
 
-Usage
------
+## Usage
 
 So the API can deal with this : `/:enc/:charset/:len/:num`
 
@@ -33,7 +28,6 @@ So the API can deal with this : `/:enc/:charset/:len/:num`
 
 Run it like this : `$ ruby ./raas.rb`
 
-License
--------
+## License
 
 Released under the ASL 2.0; see `LICENSE` for details.
