@@ -5,13 +5,11 @@ of random characters via HTTP.
 
 ## What?
 
-Yeah, we know.  Deal with it.
+Yeah, we know. Deal with it.
 
 ## Disclaimer
 
 This is a *proof of concept* and no guarantee is made to the fitness (or,
-indeed, usefulness) of this application whatsoever.  Please enjoy responsibly.
-
 ## Requirements
 
  * Ruby v1.9.3 or better; anything less would be uncivilised.
